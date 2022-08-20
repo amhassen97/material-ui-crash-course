@@ -1,7 +1,18 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+
+import SearchAppBar from '../components/AppBar';
+
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <SearchAppBar />
+
+      <Component {...pageProps} />
+
+
+    </>
+  )
 }
 
 export default MyApp
